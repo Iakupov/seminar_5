@@ -1,7 +1,7 @@
 double[] ArrayCreator(int min, int max, int length)
 {
     double[] array = new double[length];
-    for (int i = 0; i < length; i++) array[i] = new Random().Next(min, max);
+    for (int i = 0; i < length; i++) array[i] = new Random().NextDouble()*(max - min) + min;
     return array;
 }
 double MaxMinSubtractor(double[] array)
